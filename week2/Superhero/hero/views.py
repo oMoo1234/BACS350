@@ -17,3 +17,7 @@ class IronmanView(TemplateView):
 
 class BlackwidowView(TemplateView):
     template_name = "black_widow.html"
+
+
+class MainPage(TemplateView):
+    template_name = "index.html"
