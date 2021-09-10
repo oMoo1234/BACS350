@@ -15,3 +15,7 @@ class SuperPage(TemplateView):
 
 class UndertakerPage(TemplateView):
     template_name = "undertaker.html"
+
+
+class VirusPage(TemplateView):
+    template_name = "virus.html"
