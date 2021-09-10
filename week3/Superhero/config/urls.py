@@ -1,10 +1,11 @@
 from django.urls import path
-from hero.views import MainPage, SuperPage, CenaPage, UndertakerPage
+from hero.views import MainPage, SuperPage, CenaPage, UndertakerPage, VirusPage
 
 urlpatterns = [
     path("", MainPage.as_view()),
-    path("undertaker.html", UndertakerPage.as_view()),
-    path("cena.html", CenaPage.as_view()),
-    path("super.html", SuperPage.as_view()),
+    path("undertaker", UndertakerPage.as_view()),
+    path("cena", CenaPage.as_view()),
+    path("super", SuperPage.as_view()),
+    path("virus", VirusPage.as_view()),
 
 ]
