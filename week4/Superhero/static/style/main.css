@@ -1,0 +1,22 @@
+body {
+    background: black;
+}
+
+#head {
+    color: brown;
+    position: relative;
+    left: 550px;
+}
+
+#list {
+    position: absolute;
+    left: 300px;
+}
+
+#logo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    right: auto;
+    left: 800px;
+}
