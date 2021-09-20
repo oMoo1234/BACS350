@@ -35,11 +35,14 @@ body {
 }
 
 #picolohead {
+    color: green;
+    ;
     position: relative;
     left: 600px;
 }
 
 #friezahead {
+    color: purple;
     position: relative;
     left: 600px;
 }
@@ -52,6 +55,7 @@ body {
 }
 
 #buuhead {
+    color: pink;
     position: relative;
     left: 600px;
 }
@@ -64,6 +68,7 @@ body {
 }
 
 #brolyhead {
+    color: green;
     position: relative;
     left: 600px;
 }
@@ -71,4 +76,34 @@ body {
 #brolypic {
     position: relative;
     left: 300px;
+}
+
+#brolyp {
+    color: blanchedalmond;
+    position: relative;
+    left: 400px;
+}
+
+#buup {
+    color: white;
+    position: relative;
+    left: 400px;
+}
+
+#friezap {
+    color: white;
+    position: relative;
+    left: 300px;
+}
+
+#picolop {
+    color: white;
+    position: relative;
+    left: 300px;
+}
+
+#popop {
+    color: white;
+    position: relative;
+    left: 350px;
 }
