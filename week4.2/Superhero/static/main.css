@@ -1,0 +1,109 @@
+body {
+    background: black;
+}
+
+#head {
+    position: relative;
+    left: 550px;
+}
+
+#list {
+    position: absolute;
+    left: 300px;
+}
+
+#logo {
+    position: relative;
+    left: 700px;
+    height: 150px;
+    width: 150px;
+}
+
+#h1 {
+    position: relative;
+    left: 600px;
+}
+
+#popopic {
+    position: relative;
+    left: 350px;
+}
+
+#picolopic {
+    position: relative;
+    left: 350px;
+}
+
+#picolohead {
+    color: green;
+    ;
+    position: relative;
+    left: 600px;
+}
+
+#friezahead {
+    color: purple;
+    position: relative;
+    left: 600px;
+}
+
+#friezapic {
+    position: relative;
+    left: 450px;
+    height: 300px;
+    width: 400px;
+}
+
+#buuhead {
+    color: pink;
+    position: relative;
+    left: 600px;
+}
+
+#buupic {
+    position: relative;
+    left: 450px;
+    height: 300px;
+    width: 400px;
+}
+
+#brolyhead {
+    color: green;
+    position: relative;
+    left: 600px;
+}
+
+#brolypic {
+    position: relative;
+    left: 300px;
+}
+
+#brolyp {
+    color: blanchedalmond;
+    position: relative;
+    left: 400px;
+}
+
+#buup {
+    color: white;
+    position: relative;
+    left: 400px;
+}
+
+#friezap {
+    color: white;
+    position: relative;
+    left: 300px;
+}
+
+#picolop {
+    color: white;
+    position: relative;
+    left: 300px;
+}
+
+#popop {
+    color: white;
+    position: relative;
+    left: 350px;
+}
