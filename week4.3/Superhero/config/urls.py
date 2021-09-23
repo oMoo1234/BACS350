@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from hero.views import IndexPage
+from hero.views import IndexPage, HeroListView, HeroDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', IndexPage.as_view())
+    path('', IndexPage.as_view()),
+    path('hero/', HeroListView.as_view()),
+    path('hero/', HeroListView.as_view()),
+    path('hero/<int:pk>', HeroDetailView.as_view())
+
+
 
 ]
