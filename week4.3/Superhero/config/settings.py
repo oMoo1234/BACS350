@@ -123,6 +123,7 @@ USE_TZ = True
 # Enable the static media server (Images, CSS, Javascript)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [join(BASE_DIR, 'static'), ]
+STATIC_ROOT = BASE_DIR / "static_assets"
 
 
 # Default primary key field type
