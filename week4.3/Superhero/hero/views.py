@@ -1,8 +1,10 @@
+from django.db import models
 from django.views.generic import ListView, TemplateView
 from .models import Hero
 
 
 class IndexPage(TemplateView):
+    model = Hero
     template_name = 'index.html'
 
 
