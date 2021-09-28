@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,13 +8,15 @@
     <title>Superhero details</title>
 </head>
 
-<body>
-    <h2>{{ hero.name }}</h2>
-    <p>{{ hero.description}}</p>
-    <img src="{{hero.image}}" alt="{{hero.name}}" width="300px">
-    <p>
-        <a href="/hero/"> show all hero</a>
-    </p>
-</body>
+<body> -->
+{% extends 'superhero_theme.html'%} {% block content %}
+<h2>{{ hero.name }}</h2>
+<p>{{ hero.description}}</p>
+<img src="{{hero.image}}" alt="{{hero.name}}" width="300px">
+<p>
+    <a href="/hero/"> show all hero</a>
+</p>
+{% endblock %}
+<!-- </body>
 
-</html>
+</html> -->
