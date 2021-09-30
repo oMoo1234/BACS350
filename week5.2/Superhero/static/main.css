@@ -2,21 +2,34 @@
     background: black;
 }
 
-#supergallery {
+#super {
     padding: 20px;
-    color: red;
-    background-color: black;
+    color: black;
+    background-color: yellow;
     text-align: center;
     border: 4px solid red;
     border-radius: 2px 2px 5px black;
 }
 
 #color {
-    position: relative;
     height: 300px;
     width: 300px;
 }
 
-h1 {
-    color: green;
+#description {
+    color: yellow;
+}
+
+#name {
+    color: teal;
+}
+
+#listtitle {
+    color: teal;
+    position: absolute;
+    left: 500px;
+}
+
+#list {
+    color: teal;
 }

@@ -1,11 +1,11 @@
  {% extends 'superhero_theme.html'%} {% block content %}
-<h1>Superhero Gallery</h1>
-<ol>
+<h1 id="listtitle">Superhero Gallery</h1>
+<br>
+<br>
+<br>
+<ol id="list">
     {% for hero in object_list %}
     <li>
-        <!-- <h2>{{ hero.name }}</h2>
-            <p>{{ hero.description}}</p>
-            <img src="{{hero.image}}" alt="{{hero.name}}" width="300px"> -->
         <p>
             <a class="btn btn-warning" href="{{hero.pk}}">{{hero.name}}</a>
         </p>
