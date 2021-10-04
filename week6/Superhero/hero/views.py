@@ -1,5 +1,5 @@
 from django.db import models
-from django.views.generic import ListView, TemplateView
+from django.views.generic import ListView, TemplateView, CreateView
 from .models import Hero
 
 
@@ -11,6 +11,12 @@ class IndexPage(TemplateView):
 class HeroListView(ListView):
     model = Hero
     template_name = 'hero_list.html'
+
+
+class CreateHero(CreateView):
+    model = Hero
+    template_name = 'add_hero.html'
+    fields = ["name"]
 
 
 class HeroDetailView(TemplateView):

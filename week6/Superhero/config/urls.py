@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from hero.views import IndexPage, HeroListView, HeroDetailView
+from hero.views import IndexPage, HeroListView, HeroDetailView, CreateHero
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage.as_view()),
     path('hero/', HeroListView.as_view()),
-    path('hero/<int:pk>', HeroDetailView.as_view())
+    path('hero/<int:pk>', HeroDetailView.as_view()),
+    path('hero/add', CreateHero.as_view())
 
 ]
