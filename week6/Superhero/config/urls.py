@@ -21,7 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage.as_view()),
     path('hero/', HeroListView.as_view()),
-    # path('hero/', HeroListView.as_view()),
     path('hero/<int:pk>', HeroDetailView.as_view())
 
 ]
