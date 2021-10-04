@@ -1,0 +1,35 @@
+#body {
+    background: black;
+}
+
+#super {
+    padding: 20px;
+    color: black;
+    background-color: yellow;
+    text-align: center;
+    border: 4px solid red;
+    border-radius: 2px 2px 5px black;
+}
+
+#color {
+    height: 300px;
+    width: 300px;
+}
+
+#description {
+    color: yellow;
+}
+
+#name {
+    color: teal;
+}
+
+#listtitle {
+    color: teal;
+    position: absolute;
+    left: 500px;
+}
+
+#list {
+    color: teal;
+}
