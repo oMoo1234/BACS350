@@ -1,6 +1,9 @@
 from django.db import models
+from django.db.models import fields
 from django.views.generic import ListView, TemplateView, CreateView
+from django.views.generic.edit import DeleteView
 from .models import Hero
+from django.urls import reverse_lazy
 
 
 class IndexPage(TemplateView):
@@ -16,7 +19,13 @@ class HeroListView(ListView):
 class CreateHero(CreateView):
     model = Hero
     template_name = 'add_hero.html'
-    fields = ["name"]
+    fields = ["name", "description"]
+
+
+class DeleteHero(DeleteView):
+    model = Hero
+    template_name = 'delete_hero.html'
+    success_url = reverse_lazy('hero_list')
 
 
 class HeroDetailView(TemplateView):
