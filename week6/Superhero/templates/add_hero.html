@@ -1,10 +1,12 @@
 {% extends 'superhero_theme.html'%} {% block content%}
 <h1 id="addherohead">Add New Superhero</h1>
-<br><br><br><br><br><br><br>
-<form method="post">
-    {% csrf_token %} {{form.as_p}}
-    <br>
-    <input type="submit" value="Add Hero">
-</form>
-<br><br>
-<a class="btn btn-danger" href="/hero/">return to hero list</a> {% endblock %}
+<br>
+<a class="btn btn-danger" href="/hero/">return to hero list</a>
+<div id="form">
+    <form method="post">
+        {% csrf_token %} {{form.as_p}}
+        <br>
+        <input type="submit" value="Add Hero">
+    </form>
+</div>
+<br><br> {% endblock %}

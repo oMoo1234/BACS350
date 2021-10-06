@@ -3,15 +3,11 @@
 <br>
 <br>
 <br>
-<ol id="list">
-    {% for hero in object_list %}
-    <li>
-        <p>
-            <a class="btn btn-warning" href="{{hero.pk}}">{{hero.name}}</a>
-        </p>
-
-    </li>
-    {% endfor %}
-</ol>
-<br>
-<a href="/" class="btn btn-danger"> return to main page</a> {% endblock %}
+<a href="/" class="btn btn-danger"> return to main page</a> {% for hero in object_list %}
+<div id="listbuttons">
+    <p>
+        <a class="btn btn-warning" href="{{hero.pk}}">{{hero.name}}</a>
+    </p>
+</div>
+{% endfor %}
+<br> {% endblock %}
