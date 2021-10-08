@@ -1,0 +1,93 @@
+#body {
+    background: black;
+}
+
+#super {
+    padding: 20px;
+    color: black;
+    background-color: yellow;
+    text-align: center;
+    border: 4px solid red;
+    border-radius: 2px 2px 5px black;
+}
+
+#goku {
+    height: 300px;
+    width: 550px;
+}
+
+#description {
+    color: yellow;
+}
+
+#name {
+    color: teal;
+}
+
+#listtitle {
+    color: teal;
+    position: absolute;
+    left: 500px;
+}
+
+#identity {
+    color: teal;
+}
+
+#strength {
+    color: teal;
+}
+
+#weakness {
+    color: teal
+}
+
+#namelabel {
+    color: teal;
+}
+
+#addherohead {
+    color: teal;
+}
+
+#form {
+    border: 10px outset red;
+    background-color: lightblue;
+    padding: 10px;
+    width: 440px;
+    resize: both;
+    /* overflow: auto; */
+    text-align: right;
+}
+
+#deletepage {
+    color: lightblue;
+}
+
+#listbuttons {
+    border: 10px outset red;
+    background-color: lightblue;
+    padding: 10px;
+    width: 200px;
+    resize: both;
+    /* overflow: auto; */
+    text-align: center;
+}
+
+#deleteform {
+    border: 10px outset red;
+    background-color: lightblue;
+    padding: 30px;
+    width: 500px;
+    resize: both;
+    text-align: left;
+}
+
+#editform {
+    border: 10px outset red;
+    background-color: lightblue;
+    padding: 30px;
+    width: 500px;
+    resize: both;
+    text-align: right;
+}
