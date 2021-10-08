@@ -1,10 +1,11 @@
 {% extends 'superhero_theme.html'%} {% block content %}
 
-<h1>Edit Hero</h1>
+<h1 style="color:aqua">Edit Hero</h1>
 
-<form action="" method="post">{% csrf_token %} {{ form }}
+<div id="editform">
+    <form action="" method="post">{% csrf_token %} {{ form.as_p }}
 
-    <button class="btn btn-success mt-5" type="submit">Save Edit</button>
-</form>
-
+        <button class="btn btn-success mt-5" type="submit">Save Edit</button>
+    </form>
+</div>
 {% endblock %}

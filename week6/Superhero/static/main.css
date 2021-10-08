@@ -80,6 +80,14 @@
     padding: 30px;
     width: 500px;
     resize: both;
-    /* overflow: auto; */
     text-align: left;
+}
+
+#editform {
+    border: 10px outset red;
+    background-color: lightblue;
+    padding: 30px;
+    width: 500px;
+    resize: both;
+    text-align: right;
 }
