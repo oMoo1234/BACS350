@@ -16,4 +16,4 @@ class Hero (models.Model):
         return f"{self.name}, {self.description}"
 
     def get_absolute_url(self):
-        return reverse_lazy('add_hero')
+        return reverse_lazy('hero_list')

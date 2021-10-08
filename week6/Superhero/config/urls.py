@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from hero.views import IndexPage, HeroListView, HeroDetailView, CreateHero, DeleteHero
+from hero.views import IndexPage, HeroListView, HeroDetailView, CreateHero, DeleteHero, UpdateHero
 
 
 urlpatterns = [
@@ -24,6 +24,7 @@ urlpatterns = [
     path('hero/', HeroListView.as_view(), name="hero_list"),
     path('hero/<int:pk>', HeroDetailView.as_view()),
     path('hero/add', CreateHero.as_view(), name="add_hero"),
+    path('hero/<int:pk>/', UpdateHero.as_view(),  name='update_hero'),
     path('hero/<int:pk>/delete', DeleteHero.as_view(), name="delete_hero")
 
 ]
