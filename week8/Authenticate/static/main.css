@@ -1,5 +1,6 @@
 #body {
-    background: black;
+    background: sienna;
+    text-align: center;
 }
 
 #super {
@@ -24,11 +25,12 @@
     color: teal;
 }
 
-#listtitle {
+
+/* #listtitle {
     color: teal;
     position: absolute;
     left: 500px;
-}
+} */
 
 #identity {
     color: teal;

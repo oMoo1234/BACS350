@@ -1,4 +1,8 @@
-{% extends 'superhero_theme.html' %}{% block content %} {% if user.is_authenticated %}
+{% extends 'superhero_theme.html' %}{% block content %}
+
+<h1 id="deletepage">Delete Superhero</h1>
+
+{% if user.is_authenticated %}
 <p> Hi {{ user.username }}!</p>
 
 <div id="deleteform">
@@ -15,9 +19,4 @@
 <a href="{% url 'login' %}">Log In</a>
 <br>
 <br>
-<a href="{% url 'signup' %}">Sign Up</a>{% endif %}
-
-
-<h1 id="deletepage">Delete Superhero</h1>
-
-{% endblock %}
+<a href="{% url 'signup' %}">Sign Up</a>{% endif %} {% endblock %}
