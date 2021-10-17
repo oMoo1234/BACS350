@@ -67,6 +67,8 @@
 }
 
 #listbuttons {
+    position: absolute;
+    left: 580px;
     border: 10px outset red;
     background-color: lightblue;
     padding: 10px;
@@ -86,10 +88,23 @@
 }
 
 #editform {
+    position: absolute;
+    left: 420px;
     border: 10px outset red;
     background-color: lightblue;
     padding: 30px;
     width: 500px;
     resize: both;
     text-align: right;
+}
+
+#signupform {
+    position: absolute;
+    left: 420px;
+    border: 10px outset red;
+    background-color: lightblue;
+    padding: 30px;
+    width: 500px;
+    resize: both;
+    text-align: left;
 }
