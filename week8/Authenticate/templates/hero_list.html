@@ -1,0 +1,14 @@
+ {% extends 'superhero_theme.html'%} {% block content %}
+<h1 id="listtitle">Superhero Gallery</h1>
+<br>
+<br>
+<br>
+<a href="/" class="btn btn-danger"> return to main page</a> {% for hero in object_list %}
+<div id="listbuttons">
+    <p>
+        <a class="btn btn-warning" href="{{hero.pk}}">{{hero.name}}</a>
+    </p>
+    <p><a href="{{ hero.pk }}/">Edit</a></p>
+</div>
+{% endfor %}
+<br> {% endblock %}
