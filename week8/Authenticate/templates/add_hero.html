@@ -10,6 +10,8 @@
         <input type="submit" value="Add Hero">
     </form>
 </div>
+<br>
+<br>
 <p><a href="{% url 'logout' %}">Log Out</a></p>
 
 
@@ -20,8 +22,6 @@
 <br>
 <br>
 <a href="{% url 'signup' %}">Sign Up</a>{% endif %}
-<br>
-<br>
 <br>
 <a class="btn btn-danger" href="/hero/">return to hero list</a>
 <br><br> {% endblock %}
