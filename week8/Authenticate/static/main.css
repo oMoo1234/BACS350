@@ -52,7 +52,9 @@
     color: teal;
 }
 
-#form {
+#addheroform {
+    position: absolute;
+    left: 500px;
     border: 10px outset red;
     background-color: lightblue;
     padding: 10px;

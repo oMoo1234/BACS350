@@ -3,7 +3,7 @@
 <p> Hi {{ user.username }}!</p>
 
 <br> {% if user.is_authenticated %}
-<div id="form">
+<div id="addheroform">
     <form method="post">
         {% csrf_token %} {{form.as_p}}
         <br>
