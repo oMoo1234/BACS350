@@ -15,19 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from hero.views import IndexPage, HeroListView, HeroDetailView, CreateHero, DeleteHero, UpdateHero
+from django.views.generic.base import TemplateView
+from accounts.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', IndexPage.as_view(), name="index"),
-    path('hero/', HeroListView.as_view(), name="hero_list"),
-    path('hero/<int:pk>', HeroDetailView.as_view()),
-    path('hero/add', CreateHero.as_view(), name="add_hero"),
-    path('hero/<int:pk>/', UpdateHero.as_view(),  name='update_hero'),
-    path('hero/<int:pk>/delete', DeleteHero.as_view(), name="delete_hero")
-
-
-
-
-
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('', HomeView.as_view(), name='home')
 ]
