@@ -110,3 +110,9 @@
     resize: both;
     text-align: left;
 }
+
+#footer {
+    border: 1px inset black;
+    text-align: left;
+    color: white;
+}
