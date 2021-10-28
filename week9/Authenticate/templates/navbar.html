@@ -1,8 +1,7 @@
 <div id="navbar">
     {% if user.is_authenticated %}
     <p> Hi {{ user.username }}!</p>
-    <p class="btn btn-primary"><a href="{% url 'logout' %}">Log Out</a></p>
-    {% else %}
+    <a class="btn btn-primary" href="{% url 'logout' %}">Log Out</a> {% else %}
 
     <p>You are not logged in</p>
     <a class="btn btn-primary" href="{% url 'login' %}">Log In</a>
