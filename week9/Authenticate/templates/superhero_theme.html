@@ -11,7 +11,10 @@
 </head>
 
 <body id="body">
-    {%block content%}{% endblock content %} {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %} {% block header %} {% include 'header.html' %} {% endblock header %} {% block footer %} {% include 'footer.html' %} {% endblock footer %}
+    {% block header %} {% include 'header.html' %} {% endblock header %} {% block navbar %} {% include 'navbar.html'%}{% endblock navbar %}
+
+    <br>{%block content%} {% endblock content %}
+    <br>{% block footer %} {% include 'footer.html' %} {% endblock footer %}
 </body>
 
 
