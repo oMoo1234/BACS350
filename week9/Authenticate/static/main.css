@@ -25,13 +25,6 @@
     color: teal;
 }
 
-
-/* #listtitle {
-    color: teal;
-    position: absolute;
-    left: 500px;
-} */
-
 #identity {
     color: teal;
 }
@@ -101,7 +94,7 @@
 }
 
 #signupform {
-    position: absolute;
+    position: relative;
     left: 420px;
     border: 10px outset red;
     background-color: lightblue;
@@ -112,6 +105,10 @@
 }
 
 #footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
     background-color: lightblue;
     border: 1px inset black;
     text-align: left;
