@@ -1,0 +1,15 @@
+{% extends 'superhero_theme.html'%}{% block content %}
+
+<div id="article">
+    <h1>Welcome to the article page!</h1>
+    {% if user.is_authenticated %}
+    <p> Hi {{ user.username }}!</p>
+    {% endif %}
+
+    <!-- <a class="btn btn-primary" href="/article/">List of Article</a> -->
+
+    <a class="btn btn-primary" href="/article/add">Add Article</a>
+    <!-- <a class="btn btn-primary" href="/article/">Article</a> -->
+
+</div>
+{% endblock content%}

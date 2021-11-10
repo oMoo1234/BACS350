@@ -1,0 +1,21 @@
+{% extends 'superhero_theme.html'%} {% block content %}
+
+<h1 style="color:aqua">Edit Hero</h1>
+{% if user.is_authenticated %}
+<p> Hi {{ user.username }}!</p>
+<div id="editform">
+    <form action="" method="post">{% csrf_token %} {{ form.as_p }}
+
+        <button class="btn btn-success mt-5" type="submit">Save Edit</button>
+    </form>
+</div>
+<p><a href="{% url 'logout' %}">Log Out</a></p>
+
+{% else %}
+
+<p>You are not logged in</p>
+<!-- <a href="{% url 'login' %}">Log In</a> -->
+<br>
+<br>
+<!-- <a href="{% url 'signup' %}">Sign Up</a> -->
+{% endif %} {% endblock %}
